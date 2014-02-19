@@ -22,6 +22,13 @@ Hi, I'm learning ClojureScript by doing Project Euler.
 
 4. Navigated my browser to http://localhost:3000
 
+## How I'm Learning
+
+1. Doing [ClojureScript Koans](http://clojurescriptkoans.com/#conditionals/1)
+2. Reading [ClojureScript Style Guide](https://github.com/bbatsov/clojure-style-guide)
+3. Experimenting in `lein repl`.
+4. Reading docstrings of functions I encounter with `(doc <funcname>)` in REPL.
+
 ## Rendering Answers to the page
 
 I made the server pull the problem number from the URL and display the answer
