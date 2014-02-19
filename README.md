@@ -30,6 +30,7 @@ Hi, I'm learning ClojureScript by doing Project Euler.
 1. Reading [Clojure Functional Programming](http://clojure.org/functional_programming)
 1. Thumbing through [Clojure Core API](http://clojure.github.io/clojure/clojure.core-api.html)
 1. Reading [ClojureScript - Differences from Clojure - Host Interop](https://github.com/clojure/clojurescript/wiki/Differences-from-Clojure#wiki-host-interop) for accessing javascript properties like `(.-Infinity js/window)` and functions like `(.sqrt js/Math 25)`.
+1. Reading [Javascript to ClojureScript synonyms](http://kanaka.github.io/clojurescript/web/synonym.html)
 1. Experimenting in `lein repl` for Clojure REPL.
 1. Experimenting in <http://clojurescript.net/> for ClojureScript REPL with a browser context.
 1. Reading docstrings of functions I encounter with `(doc <funcname>)` in REPL.
