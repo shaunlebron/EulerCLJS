@@ -10,7 +10,7 @@
    :body
    (if (re-find #"^[\d]+$" path)
        (str "<script src='js/cljs.js'></script>"
-            "Answer to problem " path " = <span id='answer'></span>"
+            "Answer to <a href='http://projecteuler.net/problem=" path "'>problem " path "</a> = <span id='answer'></span>"
             "<script>window.onload = function() { document.getElementById('answer').innerHTML = euler.problem" path "(); }</script>")
        "Type a valid problem number in the URL")})
 
