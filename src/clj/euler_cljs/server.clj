@@ -4,27 +4,20 @@
             [ring.util.response :as response])
   (:gen-class))
 
-(defn render-app []
+(defn page [path]
   {:status 200
    :headers {"Content-Type" "text/html"}
    :body
-   (str "<!DOCTYPE html>"
-        "<html>"
-        "<head>"
-        "<link rel=\"stylesheet\" href=\"css/page.css\" />"
-        "</head>"
-        "<body>"
-        "<div>"
-        "<p id=\"clickable\">Click me!</p>"
-        "</div>"
-        "<script src=\"js/cljs.js\"></script>"
-        "</body>"
-        "</html>")})
+   (if (re-find #"^[\d]+$" path)
+       (str "<script src='js/cljs.js'></script>"
+            "Answer to problem " path " = <span id='answer'></span>"
+            "<script>window.onload = function() { document.getElementById('answer').innerHTML = euler.problem" path "(); }</script>")
+       "Type a valid problem number in the URL")})
 
 (defn handler [request]
-  (if (= "/" (:uri request))
-      (response/redirect "/help.html")
-      (render-app)))
+  (-> (:uri request)
+      (subs 1)
+      (page)))
 
 (def app 
   (-> handler
