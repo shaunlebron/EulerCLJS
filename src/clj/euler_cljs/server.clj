@@ -11,7 +11,7 @@
    (if (re-find #"^[\d]+$" path)
        (str "<script src='js/cljs.js'></script>"
             "Answer to <a href='http://projecteuler.net/problem=" path "'>problem " path "</a> = <span id='answer'></span>"
-            "<script>window.onload = function() { document.getElementById('answer').innerHTML = euler.problem" path "(); }</script>")
+            "<script>window.onload = function() { document.getElementById('answer').innerHTML = euler.problem" path ".answer(); }</script>")
        "Type a valid problem number in the URL")})
 
 (defn handler [request]
@@ -25,4 +25,3 @@
 
 (defn -main [& args]
   (jetty/run-jetty app {:port 3000}))
-
