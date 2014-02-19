@@ -4,7 +4,7 @@ Hi, I'm learning ClojureScript by doing Project Euler.
 
 - Run `lein run` in repo directory.
 - Navigate to <http://localhost:3001/N> to see the answer to problem N.
-- The answer to problem N is calculated by the function `euler.problemN` in "src/cljs/euler-cljs/client.cljs".
+- The answer to problem N is calculated by the function `euler.problemN` in "src/cljs/euler-cljs/problemN.cljs".
 
 ## Setup
 
