@@ -25,9 +25,10 @@ Hi, I'm learning ClojureScript by doing Project Euler.
 ## How I'm Learning
 
 1. Doing [ClojureScript Koans](http://clojurescriptkoans.com)
-2. Reading [ClojureScript Style Guide](https://github.com/bbatsov/clojure-style-guide)
-3. Experimenting in `lein repl`.
-4. Reading docstrings of functions I encounter with `(doc <funcname>)` in REPL.
+1. Reading [ClojureScript Style Guide](https://github.com/bbatsov/clojure-style-guide)
+1. Reading [Clojure Programming By Example](http://en.wikibooks.org/wiki/Clojure_Programming/By_Example)
+1. Experimenting in `lein repl`.
+1. Reading docstrings of functions I encounter with `(doc <funcname>)` in REPL.
 
 ## Rendering Answers to the page
 
