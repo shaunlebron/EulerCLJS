@@ -1,6 +1,6 @@
 (defproject euler-cljs "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+  :description "Learning CLJS with Project Euler"
+  :url "http://github.com/shaunlebron/EulerCLJS"
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2156"]
                  [ring "1.2.1"]]
