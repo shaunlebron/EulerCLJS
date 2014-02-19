@@ -1,11 +1,8 @@
 (ns euler.problem1)
 
-(defn multOf3or5 [n]
-  (or
-    (= 0 (mod n 3))
-    (= 0 (mod n 5))))
+(defn multOfAny [n factors] (some #(zero? (mod n %)) factors))
 
 (defn answer []
   (->> (range 1 1000)
-       (filter multOf3or5)
+       (filter #(multOfAny % [3 5]))
        (reduce +)))
