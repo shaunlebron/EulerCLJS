@@ -1,6 +1,6 @@
 (ns euler.problem4)
 
-(defn get-pairs [top bot]
+(defn get-products [top bot]
   (loop [i top prods []]
     (if (= i bot)
       prods
@@ -9,4 +9,4 @@
 (defn palindrome? [n] (= (seq n) (reverse n)))
 
 (defn answer []
-  (apply max (filter #(palindrome? (str %)) (get-pairs 999 99))))
+  (apply max (filter #(palindrome? (str %)) (get-products 999 99))))
